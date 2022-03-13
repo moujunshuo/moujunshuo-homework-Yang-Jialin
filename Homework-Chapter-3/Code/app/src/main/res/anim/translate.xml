@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <translate
+        android:duration="1000"
+        android:fromXDelta="10"
+        android:fromYDelta="10"
+        android:toXDelta="100"
+        android:toYDelta="100" />
+
+</set>
+<!--
+fromXDelta: 起始x值
+fromYDelta :起始y值
+toXDelta:结束x值
+toYDelta:结束y值
+-->
