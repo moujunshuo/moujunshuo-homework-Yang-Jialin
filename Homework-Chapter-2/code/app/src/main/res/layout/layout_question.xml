@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/question"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+    <!-- From https://stackoverflow.com/questions/31940333/ -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/difficulty"
+            android:layout_width="81dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:width="50dp"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:text="Scooter" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@id/difficulty"
+            android:layout_toRightOf="@id/difficulty">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:text="Scooter" />
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/name"
+                android:layout_marginBottom="10dp"
+                android:gravity="left"
+                tools:text="题解 16153;通过率 52.3%" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--滚动显示的每一个列表项内容为何 -->
+<!--ViewHolder见SearchItemAdapter文件
+ 对于每一行内容的布局 -->
+<!--声明行布局文件 -->
+<!--android:paddingTop 指该控件内部内容距离该控件上边缘的边距 -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/search_item_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"/>
+
+</FrameLayout>
+
+
+<!--
+不需要设置TextView当中的内容，这会在activity当中设置
+View来设置分割线
+最外面的LinearLayout的高度需要仅设为80dp，因为这只是一个条目的高度
+id是每一个ui元件的名称
+-->
